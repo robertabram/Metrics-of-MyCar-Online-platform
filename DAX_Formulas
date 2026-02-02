@@ -1,0 +1,12 @@
+<-- Dynamic Period Slicer -->
+ChooseNPLPeriod = 
+VAR Period = SELECTEDVALUE(SelectorSecured[Period], "All Period")
+
+RETURN
+SWITCH(
+    Period,
+    "Last 3 Months",
+        IF(
+            MAX(
+            NPL[FACT_DATE]) >= DATE(
+        YEAR(TODAY()),MONTH(TODAY())-3,1),1,0),1)
