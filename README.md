@@ -12,9 +12,9 @@ Individual
 
 
 # Data Model
-Dim Tables: Loan_Dim_ByDate
-Fact Tables: Loan_Fact
-Views: view_Exchange_Rate, view_IFRS_Credit_Report
+Dim Tables: Loan_Dim_ByDate, CLIENT_DIM_ByDATE
+Fact Tables: ASP_NET_USERS, DEALERS, MODEL_ITEM, MODEL, LOAN_FACT
+Views: view_CustRep_ga_LoanApp_LTB
 
 
 # Tools Used
